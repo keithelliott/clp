@@ -2,7 +2,7 @@
 var connect = require('connect')
     , express = require('express')
     , port = (process.env.PORT || 3000)
-    , googleAnalyticsID = 'UA-37452335-1'
+    , googleAnalyticsID = process.env.GOOGLE_ANALYTICS_ID
     , nodemailer = require('nodemailer');
 
 //Setup Express
@@ -24,14 +24,14 @@ server.error(function(err, req, res, next){
                   title : '404 - Not Found'
                  ,description: ''
                  ,author: ''
-                 ,analyticssiteid: 'UA-37452335-1'
+                 ,analyticssiteid: googleAnalyticsID
                 },status: 404 });
     } else {
         res.render('500.jade', { locals: { 
                   title : 'The Server Encountered an Error'
                  ,description: ''
                  ,author: ''
-                 ,analyticssiteid: 'UA-37452335-1'
+                 ,analyticssiteid: googleAnalyticsID
                  ,error: err 
                 },status: 500 });
     }
@@ -50,7 +50,7 @@ server.get('/', function(req,res){
               title : 'The Campbell Law Practice, LLC'
              ,description: 'Atlanta Attorney'
              ,author: 'Keith Elliott'
-             ,analyticssiteid: 'UA-37452335-1'
+             ,analyticssiteid: googleAnalyticsID
             }
   });
 });
@@ -61,7 +61,7 @@ server.get('/attorney', function(req,res){
            title : 'The Campbell Law Practice, LLC'
            ,description: 'Atlanta Attorney'
            ,author: 'Keith Elliott'
-           ,analyticssiteid: 'UA-37452335-1'
+           ,analyticssiteid: googleAnalyticsID
        }
    })
 });
@@ -72,7 +72,7 @@ server.get('/practice', function(req,res){
             title : 'The Campbell Law Practice, LLC'
             ,description: 'Atlanta Attorney'
             ,author: 'Keith Elliott'
-            ,analyticssiteid: 'UA-37452335-1'
+            ,analyticssiteid: googleAnalyticsID
         }
     })
 });
@@ -83,7 +83,7 @@ server.get('/contact', function(req,res){
             title : 'The Campbell Law Practice, LLC'
             ,description: 'Atlanta Attorney'
             ,author: 'Keith Elliott'
-            ,analyticssiteid: 'UA-37452335-1'
+            ,analyticssiteid: googleAnalyticsID
         }
     })
 });
@@ -94,7 +94,7 @@ server.get('/workerscomp', function(req,res){
             title : 'The Campbell Law Practice, LLC'
             ,description: 'Atlanta Attorney'
             ,author: 'Keith Elliott'
-            ,analyticssiteid: 'UA-37452335-1'
+            ,analyticssiteid: googleAnalyticsID
         }
     })
 });
@@ -105,7 +105,7 @@ server.get('/adoptions', function(req,res){
             title : 'The Campbell Law Practice, LLC'
             ,description: 'Atlanta Attorney'
             ,author: 'Keith Elliott'
-            ,analyticssiteid: 'UA-37452335-1'
+            ,analyticssiteid: googleAnalyticsID
         }
     })
 });
@@ -116,7 +116,7 @@ server.get('/guardian_ad_litem', function(req,res){
             title : 'The Campbell Law Practice, LLC'
             ,description: 'Atlanta Attorney'
             ,author: 'Keith Elliott'
-            ,analyticssiteid: 'UA-37452335-1'
+            ,analyticssiteid: googleAnalyticsID
         }
     })
 });
@@ -152,7 +152,7 @@ server.post('/sendcontact', function(req, res){
             service: "Gmail",
             auth: {
                 user: "information@campbelllawpractice.com",
-                pass: "malia&moriah"
+                pass: process.env.EMAIL_PASSWORD
             }
         });
 
