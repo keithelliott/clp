@@ -23,7 +23,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
+            <state line="26" column="33" selection-start="905" selection-end="920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,16 +41,7 @@
       <file leaf-file-name="layout.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="659" selection-start="956" selection-end="956" vertical-scroll-proportion="0.38793105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="63" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+            <state line="88" column="10" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.76293105">
               <folding />
             </state>
           </provider>
@@ -456,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
@@ -470,16 +454,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="63" selection-start="847" selection-end="847" vertical-scroll-proportion="0.31034482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
+        <state line="26" column="33" selection-start="905" selection-end="920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="659" selection-start="956" selection-end="956" vertical-scroll-proportion="0.38793105">
+        <state line="88" column="10" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.76293105">
           <folding />
         </state>
       </provider>
