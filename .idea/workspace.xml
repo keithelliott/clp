@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="33" selection-start="905" selection-end="920" vertical-scroll-proportion="0.0">
+            <state line="15" column="28" selection-start="575" selection-end="575" vertical-scroll-proportion="0.32327586">
               <folding />
             </state>
           </provider>
@@ -38,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="10" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.76293105">
+            <state line="74" column="38" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -461,16 +461,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="33" selection-start="905" selection-end="920" vertical-scroll-proportion="0.0">
+        <state line="74" column="38" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="10" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.76293105">
+        <state line="15" column="28" selection-start="575" selection-end="575" vertical-scroll-proportion="0.32327586">
           <folding />
         </state>
       </provider>
