@@ -86,7 +86,8 @@ html.no-js(lang='en')
             script(defer, src='/js/script.js')
             script(type="text/javascript")
                 var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', !{analyticssiteid});
+                var analyticsid = "#{analyticssiteid}";
+                _gaq.push(['_setAccount', analyticsid});
                 _gaq.push(['_trackPageview']);
 
                 (function() {
