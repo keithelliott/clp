@@ -2,7 +2,7 @@
 var connect = require('connect')
     , express = require('express')
     , port = (process.env.PORT || 3000)
-    , googleAnalyticsID = process.env.GOOGLE_ANALYTICS_ID
+    , googleAnalyticsID = process.env.GOOGLE_ANALYTICS_ID || '1111'
     , nodemailer = require('nodemailer');
 
 //Setup Express
