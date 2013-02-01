@@ -136,7 +136,7 @@ server.post('/sendcontact', function(req, res){
     else{
         // setup e-mail data with unicode symbols
         var mailOptions = {
-            from: "information@campbelllawpractice.com", // sender address
+            from: process.env.CONTACT_EMAIL, // sender address
             to: "Christina Campbell <christina@campbelllawpractice.com>", // list of receivers
             subject: "New Contact Request (" + req.body.name + ")", // Subject line
             html: "<b>Hello Christina</b></br></br><p>You received a new contact request.</p></br>" +
@@ -151,7 +151,7 @@ server.post('/sendcontact', function(req, res){
         var smtpTransport = nodemailer.createTransport("SMTP",{
             service: "Gmail",
             auth: {
-                user: "information@campbelllawpractice.com",
+                user: process.env.CONTACT_EMAIL,
                 pass: process.env.EMAIL_PASSWORD
             }
         });
