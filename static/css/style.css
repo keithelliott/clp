@@ -92,22 +92,506 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ #wrapper{
+     margin-right: auto;
+     margin-left: auto;
+     position: relative;
+     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+     display: block;
+ }
+
+ .clear{
+     clear: both;
+ }
+
+ header {
+   margin-right: 10px;
+   margin-left: 10px;
+   background-color: #000;
+   background: -webkit-linear-gradient(90deg, #8f8f8f -100%, #e5e5e5 100%);
+   background: -moz-linear-gradient(90deg,#8f8f8f -100%, #e5e5e5 100%);
+   background: linear-gradient(90deg,#8f8f8f -100%, #e5e5e5 100%);
+ }
+
+ nav{
+     float: right;
+     margin-top: 80px;
+     line-height: .5em;
+     background: -webkit-linear-gradient(90deg, #41526e 0%, #152e59 100%);
+     background: -moz-linear-gradient(90deg,  #41526e 0%, #152e59 100%);
+     background: linear-gradient(90deg, #41526e 0%,  #152e59 100%);
+ }
+
+ nav ul li {
+     display: inline-block;
+     border-right: 1px solid #fff;
+     padding-left: 5px;
+ }
+
+nav ul li:last-child{
+    border: none;
+}
+
+ nav ul li a {
+     margin-right: 20px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 10px; color: #fff;
+ }
+
+nav ul li a:hover{
+    margin-right: 20px;
+    font-size: 10px; color: #778899;
+}
+
+ #logo{
+     float:left;
+     margin-left: 5px;
+     margin-right:12px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     clear: both;
+ }
+
+ #initial_consult{
+     float: left;
+     padding: 2px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 12px; color: #152e59;
+     border: 3px double  #778899;
+     background: -webkit-linear-gradient(90deg, #888 -50%,  #fff 100%);
+     background: -moz-linear-gradient(90deg, #888 -50%, #fff 100%);
+     background: linear-gradient(90deg,#888 -50%,  #fff 100%);
+
+     -moz-box-shadow: 2px 2px 5px #444;
+     -moz-box-shadow: 2px 2px 5px #444;
+     -webkit-box-shadow: 2px 2px 5px #444;
+     box-shadow: 2px 2px 5px #444;
+ }
+
+ #initial_consult ul li{
+     list-style: none;
+     margin-left: -20px;
+ }
+
+ #initial_consult ul li span{
+     padding-left: 2px;
+     font-size: 12px;
+     text-decoration: none;
+ }
+
+ #banner_background{
+     background-color: #0f3068;
+     border-top: 4px solid #a9a9a9;
+     border-bottom: 4px solid #a9a9a9;
+     width: 100%;
+     z-index:0;
+     height: 280px;
+ }
+ #banner{
+    padding: 10px;
+    width: 980px;
+    margin:0 auto;
+    height: 210px;
+    position:relative;
+    z-index:1;
+ }
+
+#wrapper .content_wrapper{
+ display: table;
+}
 
 
+/*
+   Slideshow
+*/
+
+#slides {
+    position:absolute;
+    top:15px;
+    left:4px;
+    z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+    width:980px;
+    height: 210px;
+    overflow:hidden;
+    position:relative;
+    display:none;
+}
+
+.slides_container div.slide {
+    width:980px;
+    height:210px;
+    display:block;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+    width:980px;
+    height:210px;
+    display:block;
+}
+
+.slides_container a img {
+    display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+    position:absolute;
+    top:107px;
+    left:-39px;
+    width:24px;
+    height:43px;
+    display:block;
+    z-index:101;
+}
+
+#slides .next {
+    left:1000px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+    margin:20px auto 0;
+    width:100px;
+}
+
+.pagination li {
+    float:left;
+    margin:0 1px;
+    list-style:none;
+}
+
+.pagination li a {
+    display:block;
+    width:12px;
+    height:0;
+    padding-top:12px;
+    background-image:url(../images/pagination.png);
+    background-position:0 0;
+    float:left;
+    overflow:hidden;
+}
+
+.pagination li.current a {
+    background-position:0 -12px;
+}
+
+/*
+	Caption
+*/
+
+.caption {
+    z-index:500;
+    position:absolute;
+    bottom:-65px;
+    left:0;
+    height:60px;
+    margin-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    background:#000;
+    background:rgba(0,0,0,.5);
+    width:980px;
+    font-size:1em;
+    line-height:1.33;
+    color:#fff;
+    border-top:1px solid #000;
+    text-shadow:none;
+}
+
+.caption_scroller {
+    z-index:500;
+    position:absolute;
+    bottom:-65px;
+    left:0;
+    height:60px;
+    margin-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    background:#000;
+    background:rgba(0,0,0,.5);
+    width:980px;
+    font-size:1.5em;
+    line-height:1.53;
+    color:#fff;
+    border-top:1px solid #000;
+    text-shadow:none;
+    text-transform: uppercase;
+}
+
+.caption p{
+    width: 940px;
+    word-wrap: break-word;
+}
+
+#sidebar{
+    display: table-cell;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    width: 25%;
+    background-color: #152e59;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-bottom: 25px;
+    border: 2px solid #41526e;
+    background: -webkit-linear-gradient(90deg, #41526e 25%, #152e59 150%);
+    background: -moz-linear-gradient(90deg,  #41526e 25%, #152e59 150%);
+    background: linear-gradient(90deg, #41526e 25%,  #152e59 150%);
+
+    -moz-box-shadow: 2px 2px 2px #444;
+    -webkit-box-shadow: 2px 2px 2px #444;
+    box-shadow: 2px 2px 2px #444;
+}
+
+#content{
+    display: table-cell;
+    text-align: left;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    word-wrap: break-word;
+    width: 75%;
+    background: -webkit-linear-gradient(90deg, rgba(229, 229, 229, 0.21) 25%, rgba(143, 143, 143, 0.40) 150%);
+    background: -moz-linear-gradient(90deg, rgba(229, 229, 229, 0.21) 25%, rgba(143, 143, 143, 0.40) 150%);
+    background: linear-gradient(90deg, rgba(229, 229, 229, 0.21) 25%, rgba(143, 143, 143, 0.40) 150%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+
+    border: 4px solid #41526e;
+    -moz-box-shadow: 2px 2px 2px #444;
+    -webkit-box-shadow: 2px 2px 2px #444;
+    box-shadow: 2px 2px 2px #444;
+}
+
+#content h1{
+    font-size: 20px;
+    font-family: 'CallunaRegular', Georgia, 'Times New Roman', Times, serif;
+    line-height: 24px;
+    color: #233F5E;
+}
+
+#content p{
+    line-height: 22px;
+    font-size: 12px; color: #201e20;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#content h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#content h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#content h4 {
+    font-size: 12px;
+    color: #000000;
+}
+
+.contactLang{
+  color: #233F5E;
+  padding-left: 5px;
+}
+
+#content ul li{
+    line-height: 22px;
+    font-size: 12px; color: #201e20;
+    display: block;
+    margin-left: -40px;
+}
+
+ul#initialReq li{
+    list-style: circle !important;
+    margin-left: 20px;
+    list-style-position: inside;
+}
+
+#attorney_photo{
+    float: right;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-color: #000000;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    -moz-box-shadow: 4px 4px 5px #444;
+    -webkit-box-shadow: 4px 4px 5px #444;
+    box-shadow: 4px 4px 5px #444;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.normal{
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+#contact{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px; color: #fff;
+}
+
+#sendmessagebtn{
+    color:#fff;
+    float: left;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: 90%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #444;
+    background: -webkit-linear-gradient(90deg, #324c6e 0%, #3d5f8b 100%);
+    background: -moz-linear-gradient(90deg, #324c6e 0%, #3d5f8b 100%);
+    background: linear-gradient(90deg, #324c6e 0%, #3d5f8b 100%);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 2px 2px 2px #444;
+    -webkit-box-shadow: 2px 2px 2px #444;
+    box-shadow: 2px 2px 2px #444;
+}
+
+a#blogButton {
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    color: #201e20;
+    background: -webkit-linear-gradient(90deg, #fcfcfc 0%, #bdbdbc 100%);
+    background: -moz-linear-gradient(90deg, #fcfcfc 0%, #bdbdbc 100%);
+    background: linear-gradient(90deg, #fcfcfc 0%, #bdbdbc 100%);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 2px 2px 2px #444;
+    -webkit-box-shadow: 2px 2px 2px #444;
+    box-shadow: 2px 2px 2px #444;
+}
+
+a#blogButton:hover {
+   color: #114197;
+}
+
+#contact h1{
+    text-transform: uppercase;
+    font-size: 14px; color: #fff;
+}
+
+#contact ul{
+    padding-bottom: 25px;
+}
+
+#contact ul li{
+    list-style: none;
+    margin-left: -30px;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact ul li a:hover{
+    color:#808080;
+}
+
+#name, #email, #TxtAreaMessage, #phone{
+    width: 100%;
+    font-size: 14px;
+    background-color: #acacab;
+    border: none;
+    color: #0f3068;
+}
+
+::-webkit-input-placeholder{
+    color: #0f3068;
+}
+
+:-moz-placeholder{
+    color: #0f3068;
+}
+
+#TxtAreaMessage{
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 30px;
+    background-color: #201e20;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    font-size: 12px; color: #fff;
+}
 
 
+footer ul li{
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+footer ul li a{
+    color: #fff;
+}
 
 /* ==========================================================================
    Helper classes

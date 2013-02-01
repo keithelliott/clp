@@ -11,31 +11,76 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title=title
-    meta(name="description", content=description)
+    meta(name="keywords", content="Atlanta workers' compensation attorney, Atlanta workers' compensation lawyer,workers' compensation attorney in Atlanta, workers' compensation lawyer in Atlanta,workers' comp attorney,workers' comp lawyer,workers' compensation,workers' comp,workplace injury,workers' compensation injury,Atlanta,attorney,lawyer,claim,disability,lawyer, attorney, workers' compensation, workman's comp, work injuries,atlanta workers compensation lawyer, atlanta workers comp lawyer, atlanta workers compensation attorney, atlanta workers comp attorney, atlanta injury lawyer, atlanta injury attorney, Christina Campbell")
+    meta(name="robots", content="NOODP,NOYDIR")
+    title The Campbell Law Practice, LLC
+    meta(name="description", content="The Campbell Law Practice, LLC’s mission is to protect legal rights and advocate for every client with compassion, integrity and professionalism")
     meta(name="author", content=author)
     meta(name="viewport", content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/css/style.css')
-    //-script(src='js/libs/modernizr-2.0.6.min.js')
   body
-    block header
+    div#wrapper
+      header
+        div#logo
+            a(href='/')
+                img(src='/images/logo-transparent-small.png')
+        div#initial_consult
+            ul
+                li For initial consultation
+                li Call
+                    span 404.981.5257
+        nav
+            ul
+                li
+                    a(href="/") home
+                li
+                    a(href="/attorney") attorney profile
+                li
+                    a(href="/practice") practice areas
+                li
+                    a(href="/contact") contact
+                li
+                    a(href="http://campbelllawpractice.blog.com/") blog
+        div.clear
+        block header
+        div.clear
+        div.content_wrapper
+            div#sidebar
+                form#contact(action="/")
+                    h1 Practice Areas
+                    ul
+                        li
+                            a(href='/workerscomp') Workers' Compensation
+                        li
+                            a(href='/adoptions') Adoptions
+                        li
+                            a(href='guardian_ad_litem') Guardian ad Litem
+                    h1 Contact Me Today
+                    label(for='name') Name
+                    input#name(name='name',type='text',placeholder='Enter Name')
+                    label(for='email') Email
+                    input#email(name='email', type='email', placeholder='Enter Email')
+                    label(for='phone') Phone
+                    input#phone(name='phone', type='phone', placeholder='Enter Phone')
+                    label(for='message') Message
+                    textarea#TxtAreaMessage(name='message', cols=30, rows=10)
+                    a#sendmessagebtn(href='#') Send Message
+                    a#blogButton(href='http://campbelllawpractice.blog.com/') Click to read my blog.
+            block content
+        block footer
+          div.clear
+          footer
+            ul
+              li 2012 The Campbell Law Practice, LLC |
+                span
+                    a(href='#') Full Disclaimer
+              li 3915 Cascade Road, Suite T138 Atlanta, GA 30331
+              li (T)404.981.5257 (F)404.410.6923
 
-    block content
-
-    block footer
-      footer
-        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-        script
-          window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
-        //-script(defer, src='js/plugins.js')
-        script(defer, src='/js/script.js')
-        script(defer, src='/socket.io/socket.io.js')
-          script
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        //if lt IE 7
-          script(defer, src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js')
-          script(defer)
-            window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})
+            script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+            script
+              window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
+            //-script(defer, src='js/plugins.js')
+            script(src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js")
+            script(defer, src='/js/slides.min.jquery.js')
+            script(defer, src='/js/script.js')

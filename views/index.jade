@@ -1,6 +1,33 @@
 extends layout
-
+block header
+    div#banner_background
+        div#banner
+            div#slides
+                div.slides_container
+                    div.slide
+                        a(href='/workerscomp')
+                            img(src='../images/workerscomp.png')
+                        div.caption_scroller(style="bottom:0;")
+                            p Workers' Compensation
+                    div.slide
+                        a(href='/adoptions')
+                            img(src='../images/adoptions.png')
+                        div.caption_scroller(style="bottom:0;")
+                            p Adoptions
+                    div.slide
+                        a(href='guardian_ad_litem')
+                            img(src='../images/gaurdianadlitem.png')
+                        div.caption_scroller(style="bottom:0;")
+                            p Guardian ad Litem
+                a.prev(href='#')
+                    img(src="images/arrow-prev.png", width="24", height="43", alt="Arrow Prev")
+                a.next(href='#')
+                    img(src="images/arrow-next.png", width="24", height="43", alt="Arrow Next")
 block content
-	div
-		a(id='sender')='Send a Message'
-		ul(id='receiver')
+    div#content
+        hgroup
+            h1 Welcome to The Campbell Law Practice, LLC
+            p The Campbell Law Practice, LLC’s mission is to protect legal rights and advocate for every client with compassion, integrity and professionalism.  Christina E. Campbell is the Founder of The Campbell Law Practice, LLC and is a Solo Practitioner.  She understands that every client has different needs and circumstances.  Therefore, she will tailor the legal services to fit your distinct need.  She is not only a zealous supporter for what is right, but she is a compassionate advocate offering counseling for the challenges and situations that her clients are experiencing.  She will take the time to listen and understand the clients’ needs and expectations.  Then, she will provide the personalized attention and services necessary to execute superior legal representation to protect her clients’ rights.
+            p The Campbell Law Practice, LLC stands for justice and portrays integrity in all that it does.  During the initial consultation, Attorney Campbell will listen and make certain that she understand your legal needs and concerns.  She will discuss with you the strengths and challenges of your case.  She will work with you to put together a strong plan of action to fit your legal needs while advising you and protecting your legal rights.  She is committed to providing prompt, personalized and professional attention to your case.
+            p The Campbell Law Practice, LLC is currently accepting cases in Workers’ Compensation, Domestic Adoptions and Guardian ad Litem appointments.
+                span.contactLang Contact The Campbell Law Practice, LLC today to speak to an experienced attorney to help you protect your legal rights.
