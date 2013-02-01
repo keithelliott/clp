@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="3.2974138">
+            <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="11" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
+            <state line="13" column="659" selection-start="956" selection-end="956" vertical-scroll-proportion="0.38793105">
               <folding />
             </state>
           </provider>
@@ -91,11 +91,11 @@
         <option value="$PROJECT_DIR$/views/workers_comp.jade" />
         <option value="$PROJECT_DIR$/views/adoptions.jade" />
         <option value="$PROJECT_DIR$/views/guardadlitem.jade" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
       </list>
     </option>
   </component>
@@ -463,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
@@ -479,7 +472,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="3.2974138">
+        <state line="153" column="47" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="659" selection-start="956" selection-end="956" vertical-scroll-proportion="0.38793105">
           <folding />
         </state>
       </provider>
